@@ -475,6 +475,39 @@ Desde el punto de vista físico, esta simulación representa de forma cualitativ
 
 En conjunto, este bloque integra conceptos de física, termodinámica, química molecular, programación orientada a objetos, animación computacional e interfaces gráficas, permitiendo construir una herramienta educativa interactiva para visualizar el comportamiento molecular del agua durante sus cambios de fase.
 
+CÓMO INSTALAR PANDAS
+PASO 1 — Abrir la terminal en Visual Studio Code
+
+Terminal → New Terminal
+PASO 2 — Verificar Python
+
+Escribe esto y presiona ENTER:
+
+python --version
+
+Si no funciona escribe:
+
+py --version
+PASO 3 — Instalar pandas
+
+Escribe esto y presiona ENTER:
+
+pip install pandas
+
+Si aparece error escribe:
+
+python -m pip install pandas
+
+o también:
+
+py -m pip install pandas
+
+IMPORTANTE:
+sys NO se instala.
+
+Solo se usa así dentro del código:
+
+import sys
 
 
 

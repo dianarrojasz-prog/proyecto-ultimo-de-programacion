@@ -148,100 +148,103 @@ Al ejecutarse correctamente, se abrió una ventana gráfica interactiva que mues
 
 El programa permite modificar la temperatura mediante un control deslizante y observar cómo cambian las moléculas y los enlaces de hidrógeno según el estado físico del agua.
 
-COMO EJECUTAR EL ARCHIVO TXT
 # Ejecución del archivo requirements.txt e instalación de librerías
 
-## 1. Crear el archivo requirements.txt
+## 1. Crear el entorno virtual
 
-En Visual Studio Code:
+En la terminal de Visual Studio Code escribir:
 
-```txt id="2vl9wl"
-Archivo → Nuevo archivo
-```
-
-Guardar el archivo con el nombre:
-
-```txt id="t7w4tq"
-requirements.txt
-```
-
-Es importante que el archivo quede exactamente con ese nombre y no como:
-
-```txt id="4zwk7q"
-requirements.txt
-```
-
----
-
-# 2. Escribir las librerías necesarias
-
-Dentro del archivo escribir:
-
-```txt id="w6p6g5"
-numpy
-matplotlib
-pandas
-scipy
-pygame
-```
-
-Luego guardar usando:
-
-```txt id="l5n5q6"
-Ctrl + S
-```
-
----
-
-# 3. Abrir la terminal en Visual Studio Code
-
-Abrir:
-
-```txt id="8fhj7r"
-Terminal → Nuevo terminal
-```
-
-La terminal aparecerá en la parte inferior de Visual Studio Code.
-
----
-
-# 4. Ir a la carpeta donde está el archivo
-
-Si el archivo se encuentra en Downloads, escribir:
-
-```bash id="pn7z1k"
-cd Downloads
-```
-
-Después presionar ENTER.
-
-La terminal debe cambiar a algo parecido a:
-
-```txt id="j8j5h2"
-PS C:\Users\rojas\Downloads>
-```
-
-Esto indica que la terminal ya está ubicada en la carpeta correcta.
-
----
-
-# 5. Crear el entorno virtual
-
-En la terminal escribir:
-
-```bash id="z5q8rx"
+```bash
 python -m venv venv
 ```
 
 Esto crea una carpeta llamada:
 
-```txt id="8i2xlp"
+```txt
 venv
 ```
 
 La carpeta contiene un entorno virtual independiente para el proyecto.
 
 ---
+
+## 2. Activar el entorno virtual
+
+En PowerShell escribir:
+
+```bash
+.\venv\Scripts\Activate
+```
+
+Si se activa correctamente, la terminal mostrará algo parecido a:
+
+```txt
+(venv) PS C:\Users\rojas\Downloads>
+```
+
+---
+
+## 3. Generar automáticamente el archivo requirements.txt
+
+Con el entorno virtual activado y las librerías ya instaladas, escribir:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Este comando:
+
+* obtiene todas las librerías instaladas,
+* guarda sus versiones,
+* y crea automáticamente el archivo:
+
+```txt
+requirements.txt
+```
+
+---
+
+## 4. Verificar que el archivo fue creado
+
+Escribir en la terminal:
+
+```bash
+dir
+```
+
+Debe aparecer:
+
+```txt
+requirements.txt
+```
+
+---
+
+## 5. Instalar las librerías desde requirements.txt
+
+Para instalar automáticamente todas las librerías guardadas en el archivo, ejecutar:
+
+```bash
+pip install -r requirements.txt
+```
+
+El comando leerá el archivo e instalará todas las dependencias necesarias del proyecto.
+
+---
+
+## 6. Ejemplo de contenido generado por pip freeze
+
+El archivo puede contener líneas como:
+
+```txt
+numpy==2.3.1
+matplotlib==3.10.3
+pygame==2.6.1
+ipykernel==7.2.0
+```
+
+Cada línea representa una librería y su versión exacta instalada en el entorno virtual.
+
 
 # 6. Activar el entorno virtual
 

@@ -70,6 +70,67 @@ Estas extensiones se instalaron desde la sección de extensiones de Visual Studi
 y presionando el botón **Install**.
 
 ---
+## Instalación de IPyKernel en Visual Studio Code
+
+`ipykernel` es un paquete de Python que permite conectar el intérprete de Python con Jupyter y Visual Studio Code. Gracias a este paquete, VS Code puede reconocer correctamente el entorno de Python y ejecutar notebooks o programas interactivos.
+
+En este proyecto, la instalación de `ipykernel` ayudó a que Visual Studio Code detectara correctamente el entorno de ejecución y permitiera ejecutar la simulación sin errores.
+
+### Pasos para instalar `ipykernel`
+
+### 1. Abrir Visual Studio Code
+
+Se abrió el programa Visual Studio Code.
+
+---
+
+### 2. Abrir una terminal
+
+En la barra superior se seleccionó:
+
+```text id="xbgg0o"
+Terminal → Nueva terminal
+```
+
+Esto abrió una consola en la parte inferior de la ventana.
+
+---
+
+### 3. Ejecutar el comando de instalación
+
+En la terminal se escribió el siguiente comando:
+
+```bash id="4zn6tt"
+pip install ipykernel
+```
+
+y luego se presionó Enter.
+
+---
+
+### 4. Verificar la instalación
+
+Después de unos segundos, Python instaló automáticamente el paquete.
+Para comprobar que la instalación fue correcta se pudo usar:
+
+```bash id="7nygl5"
+pip show ipykernel
+```
+
+Si aparece información del paquete, significa que la instalación fue exitosa.
+
+---
+
+### 5. Función de `ipykernel`
+
+Este paquete permite:
+
+* Conectar Python con Jupyter.
+* Detectar el entorno de ejecución en Visual Studio Code.
+* Ejecutar código interactivo.
+* Evitar errores relacionados con kernels o entornos de Python.
+
+En este proyecto, `ipykernel` permitió que la simulación molecular desarrollada con Pygame pudiera ejecutarse correctamente desde Visual Studio Code.
 
 ### 5. Ejecución del programa
 

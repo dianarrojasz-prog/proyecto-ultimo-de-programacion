@@ -1,5 +1,91 @@
 En al articulo podrá encontrar el informe detallado del experimento con datos, gráficas, análisis y demás. También encontrará la descripción de los 4 bloques de código del proyecto y el archivo pny de este.
 
+## Instalación de Python, Pygame y Jupyter Kernel en Visual Studio Code
+
+Para ejecutar correctamente la simulación molecular del agua en Python, fue necesario instalar algunas herramientas adicionales en Visual Studio Code. Estas herramientas permiten ejecutar programas gráficos desarrollados con la librería Pygame.
+
+### 1. Instalación de Python
+
+Primero se instaló Python, que es el lenguaje de programación utilizado para desarrollar la simulación. Python permite ejecutar archivos con extensión `.py` y utilizar librerías científicas y gráficas.
+
+Después de instalar Python, se verificó la instalación desde la terminal usando:
+
+```bash
+python --version
+```
+
+---
+
+### 2. Instalación de Pygame
+
+La simulación utiliza la librería Pygame para crear gráficos, animaciones y manejar eventos como movimiento del mouse y teclado.
+
+La instalación se realizó desde la terminal de Visual Studio Code con el comando:
+
+```bash
+pip install pygame
+```
+
+Posteriormente se verificó que la instalación fuera correcta ejecutando:
+
+```bash
+pip show pygame
+```
+
+Pygame permite:
+
+* Dibujar moléculas y enlaces.
+* Crear ventanas gráficas.
+* Actualizar animaciones en tiempo real.
+* Detectar eventos del usuario.
+
+---
+
+### 3. Instalación de Jupyter y Jupyter Kernel
+
+Inicialmente la simulación no se ejecutaba correctamente porque Visual Studio Code no tenía instalado el kernel de Jupyter. El kernel es el componente encargado de conectar Python con el entorno de ejecución de VS Code.
+
+Para solucionarlo se instaló Jupyter usando:
+
+```bash
+pip install jupyter
+```
+
+Después de la instalación, Visual Studio Code detectó automáticamente el kernel de Python y permitió ejecutar correctamente el programa.
+
+---
+
+### 4. Instalación de extensiones en Visual Studio Code
+
+También fue necesario instalar las extensiones oficiales de:
+
+* Python
+* Jupyter
+
+Estas extensiones se instalaron desde la sección de extensiones de Visual Studio Code buscando:
+
+* `Python`
+* `Jupyter`
+
+y presionando el botón **Install**.
+
+---
+
+### 5. Ejecución del programa
+
+Finalmente, la simulación se ejecutó desde la terminal de Visual Studio Code con:
+
+```bash
+python simulacion_molecular_agua.py
+```
+
+Al ejecutarse correctamente, se abrió una ventana gráfica interactiva que muestra el comportamiento molecular del agua en sus tres fases:
+
+* sólido,
+* líquido,
+* y gaseoso.
+
+El programa permite modificar la temperatura mediante un control deslizante y observar cómo cambian las moléculas y los enlaces de hidrógeno según el estado físico del agua.
 
 COMO EJECUTAR EL ARCHIVO TXT
 # Ejecución del archivo requirements.txt e instalación de librerías

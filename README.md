@@ -1,5 +1,151 @@
 En al articulo podrá encontrar el informe detallado del experimento con datos, gráficas, análisis y demás. También encontrará la descripción de los 4 bloques de código del proyecto y el archivo pny de este.
+
+ENTORNO VIRTUAL
+
+# Creación de un entorno virtual en Visual Studio Code
+
+## 1. Instalación de Python
+
+Primero se debe descargar e instalar Python 3.11 desde la página oficial:
+
+[Python Official Website](https://www.python.org/downloads/?utm_source=chatgpt.com)
+
+Durante la instalación es importante activar la opción:
+
+```txt id="4yrm7s"
+Add Python to PATH
+```
+
+Esto permite ejecutar Python desde la terminal de Windows.
+
+---
+
+# 2. Abrir la carpeta del proyecto en Visual Studio Code
+
+En Visual Studio Code se debe abrir la carpeta donde se encuentra el proyecto:
+
+```txt id="u9m0wr"
+Archivo → Abrir carpeta
+```
+
+Luego se selecciona la carpeta correspondiente.
+
+---
+
+# 3. Abrir la terminal
+
+Dentro de Visual Studio Code abrir:
+
+```txt id="3q0g5m"
+Terminal → Nuevo terminal
+```
+
+---
+
+# 4. Crear el entorno virtual
+
+En la terminal se escribe:
+
+```bash id="k4i4vk"
+python -m venv venv
+```
+
+Este comando crea una carpeta llamada:
+
+```txt id="h3w6a7"
+venv
+```
+
+La carpeta contiene una instalación independiente de Python para el proyecto.
+
+---
+
+# 5. Activar el entorno virtual
+
+En Windows se activa escribiendo:
+
+```bash id="h8c0mg"
+venv\Scripts\activate
+```
+
+Si el entorno virtual se activó correctamente, aparecerá algo similar a:
+
+```txt id="f0ev8i"
+(venv) PS C:\Users\...
+```
+
+Esto indica que el entorno virtual ya está funcionando.
+
+---
+
+# 6. Crear el archivo requirements.txt
+
+En Visual Studio Code crear un archivo llamado:
+
+```txt id="4j8a8s"
+requirements.txt
+```
+
+Dentro del archivo escribir:
+
+```txt id="ot7c5f"
+numpy
+matplotlib
+pandas
+scipy
+pygame
+```
+
+Guardar el archivo con:
+
+```txt id="0p1vrn"
+Ctrl + S
+```
+
+---
+
+# 7. Instalar las librerías necesarias
+
+Con el entorno virtual activado, escribir en la terminal:
+
+```bash id="0skwwu"
+pip install -r requirements.txt
+```
+
+Este comando instala automáticamente todas las librerías necesarias para ejecutar el proyecto.
+
+También es posible instalarlas manualmente mediante:
+
+```bash id="ynj6g7"
+pip install numpy matplotlib pandas scipy pygame
+```
+
+---
+
+# 8. Verificar instalación
+
+Para comprobar que las librerías fueron instaladas correctamente se puede usar:
+
+```bash id="rq9ahk"
+pip list
+```
+
+La terminal mostrará la lista de paquetes instalados dentro del entorno virtual.
+
+---
+
+# 9. Ejecutar el programa
+
+Finalmente, para ejecutar el proyecto se utiliza:
+
+```bash id="lx3r4s"
+python simulacion_molecular_agua.py
+```
+
+El entorno virtual garantiza que el proyecto funcione correctamente utilizando las versiones adecuadas de Python y sus librerías, evitando incompatibilidades entre diferentes programas instalados en el sistema.
+
 Estas son las indicaciones para que corra el ultimo bloque codigo que usa pygame:
+
 # INSTALAR PYGAME EN VISUAL STUDIO CODE — PASO A PASO
 
 ## 1. Instalar Python

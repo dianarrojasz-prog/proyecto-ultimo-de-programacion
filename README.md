@@ -1,5 +1,169 @@
 En al articulo podrá encontrar el informe detallado del experimento con datos, gráficas, análisis y demás. También encontrará la descripción de los 4 bloques de código del proyecto y el archivo pny de este.
 
+
+COMO EJECUTAR EL ARCHIVO TXT
+# Ejecución del archivo requirements.txt e instalación de librerías
+
+## 1. Crear el archivo requirements.txt
+
+En Visual Studio Code:
+
+```txt id="2vl9wl"
+Archivo → Nuevo archivo
+```
+
+Guardar el archivo con el nombre:
+
+```txt id="t7w4tq"
+requirements.txt
+```
+
+Es importante que el archivo quede exactamente con ese nombre y no como:
+
+```txt id="4zwk7q"
+requirements.txt
+```
+
+---
+
+# 2. Escribir las librerías necesarias
+
+Dentro del archivo escribir:
+
+```txt id="w6p6g5"
+numpy
+matplotlib
+pandas
+scipy
+pygame
+```
+
+Luego guardar usando:
+
+```txt id="l5n5q6"
+Ctrl + S
+```
+
+---
+
+# 3. Abrir la terminal en Visual Studio Code
+
+Abrir:
+
+```txt id="8fhj7r"
+Terminal → Nuevo terminal
+```
+
+La terminal aparecerá en la parte inferior de Visual Studio Code.
+
+---
+
+# 4. Ir a la carpeta donde está el archivo
+
+Si el archivo se encuentra en Downloads, escribir:
+
+```bash id="pn7z1k"
+cd Downloads
+```
+
+Después presionar ENTER.
+
+La terminal debe cambiar a algo parecido a:
+
+```txt id="j8j5h2"
+PS C:\Users\rojas\Downloads>
+```
+
+Esto indica que la terminal ya está ubicada en la carpeta correcta.
+
+---
+
+# 5. Crear el entorno virtual
+
+En la terminal escribir:
+
+```bash id="z5q8rx"
+python -m venv venv
+```
+
+Esto crea una carpeta llamada:
+
+```txt id="8i2xlp"
+venv
+```
+
+La carpeta contiene un entorno virtual independiente para el proyecto.
+
+---
+
+# 6. Activar el entorno virtual
+
+En Windows escribir:
+
+```bash id="0r8x5u"
+venv\Scripts\activate
+```
+
+Luego presionar ENTER.
+
+Si funciona correctamente aparecerá algo similar a:
+
+```txt id="u7w0q4"
+(venv) PS C:\Users\rojas\Downloads>
+```
+
+Esto significa que el entorno virtual ya está activo.
+
+---
+
+# 7. Instalar las librerías automáticamente
+
+Con el entorno virtual activado escribir:
+
+```bash id="b5g0s6"
+pip install -r requirements.txt
+```
+
+Luego presionar ENTER.
+
+Python comenzará a descargar e instalar:
+
+* NumPy
+* Matplotlib
+* Pandas
+* SciPy
+* Pygame
+
+---
+
+# 8. Verificar que las librerías fueron instaladas
+
+Escribir:
+
+```bash id="2s8t7j"
+pip list
+```
+
+La terminal mostrará todas las librerías instaladas dentro del entorno virtual.
+
+---
+
+# 9. Ejecutar el programa
+
+Finalmente ejecutar el archivo Python mediante:
+
+```bash id="z9j6x3"
+python simulacion_molecular_agua.py
+```
+
+Si todo fue instalado correctamente, el programa abrirá la simulación molecular del agua sin errores.
+
+---
+
+# Explicación
+
+El archivo `requirements.txt` sirve para guardar todas las librerías necesarias del proyecto. Esto permite instalar automáticamente todas las dependencias con un solo comando y facilita compartir el proyecto con otros usuarios o ejecutarlo en diferentes computadores sin problemas de compatibilidad.
+
 ENTORNO VIRTUAL
 
 # Creación de un entorno virtual en Visual Studio Code
